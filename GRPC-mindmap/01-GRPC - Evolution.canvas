@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"54ee032ca16a1ea5","type":"text","text":"**Introducing RPC**\n\n1. Challenges observed when writing network programs\n\t1. Serialization/Deserialization challenges\n2. Abstracting Network Programs to look like you're doing things from a local program\n3. Understanding RPC terminology by a simple Java RMI\n\t1. Same package structure for Interfaces (client/server) - RMI\n4. Understanding How it has reduced the job of Serialization and Deserialization\n5. Challenges with RPC\n\t1. Change in signatures effecting all the clients\n\t2. Not supported for heterogeneous languages in one eco system\n\t\t- Though tools existed for cross language support, difficult to setup and use","x":-433,"y":-160,"width":793,"height":340},
+		{"id":"36955405403e9f5b","type":"text","text":"**Introducing GRPC2**\n\n1. Proto files\n\t1. Cross Language support\n\t2. Proto compiler to generate stubbs\n2. RPC feel\n3. Protocol Buffers - Data format for exchange \n4. RPC v/s REST v/s GRPC 2\n5. Why GRPC again?\n6. When and where to use GRPc2","x":-180,"y":280,"width":660,"height":360},
+		{"id":"7d6890c5b19d2a08","type":"text","text":"**The very Basics**\n1. How Computers Exchange Data ? - Networks\n2. What is Network?\n\t - A system of interconnected devices, like computers and other hardware, that can communicate and share resources\n3. What is a Protocol? TCP V/S HTTP\n4. Glimpse of a Simple Networking Program\n5. Distributed Computing V/S Webservices","x":-640,"y":-600,"width":760,"height":260},
+		{"id":"bbe38c7c94aff024","x":604,"y":507,"width":916,"height":266,"color":"6","type":"text","text":"To understand history, How Rest became \n\n1. HTTP for web\n2. REST became Web-native (No protocols are needed plain HTTP) where as RPC needs stubs and custom protocols\n3. REST as an architectural pattern for HTTP\n4. Loose Coupling\n5. The Firewall Problem (HTTP -- PORT 80 => Firewall Friendly)"},
+		{"id":"76f0ce518785544e","type":"text","text":"Understand while comparing RPC v/s REST v/s GRPC 2\n1. Which Protocols are being used?\n2. Which data format is being exchanged\n\n\nWhy Rest?\nInstead of pretending the network doesn’t exist (like RMI/CORBA), embrace the constraints of the web: statelessness, caching, resources, uniform interface","x":604,"y":220,"width":640,"height":240,"color":"6"}
+	],
+	"edges":[
+		{"id":"938f3a3d378b8708","fromNode":"7d6890c5b19d2a08","fromSide":"bottom","toNode":"54ee032ca16a1ea5","toSide":"top"},
+		{"id":"575fced39114ffd8","fromNode":"54ee032ca16a1ea5","fromSide":"bottom","toNode":"36955405403e9f5b","toSide":"top"},
+		{"id":"2461d9b33d072e32","fromNode":"36955405403e9f5b","fromSide":"right","toNode":"76f0ce518785544e","toSide":"left"},
+		{"id":"7475f5eb13db25de","fromNode":"36955405403e9f5b","fromSide":"right","toNode":"bbe38c7c94aff024","toSide":"left"}
+	]
+}
