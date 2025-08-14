@@ -1,6 +1,4 @@
-Alright Harsha — let’s make a **GRPC Mastery Curriculum** that takes you from zero to "I can design production-grade GRPC systems with architectural patterns, polyglot services, and debugging skills that impress in code reviews".
-
-We’ll approach this in **four phases**:
+**four phases**:
 
 1. **Foundations & Origin** – understand why gRPC exists, how it evolved, and its core building blocks.
 2. **Core gRPC Mechanics** – get fluent in all API types, serialization, and service contracts.
