@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package orders;
+
+//option java_multiple_files=true;
+//option java_package="com.example.orders";
+// option java_outer_classname="OrdersProto";
+
+message Order {
+    int32 id = 1;
+    string item = 2;
+    int32 quantity = 3;
+}
+
+message OrdersRequest {
+    int32 user_id = 1;
+}
+
+message OrderList {
+    repeated Order orders = 1;
+}
+
+message OrderRequest {
+    int32 order_id = 1;
+}
+
+service OrderService {
+    rpc GetOrder (OrderRequest) returns (Order);
+    rpc GetOrders (OrdersRequest) returns (OrderList);
+}
+
